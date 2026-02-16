@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Work">
+    <h1>Work</h1>
+
+    <p class="intro">I work with leadership teams on pricing, growth, and commercial execution—most often in situations where analytical insight exists, but decision-making, incentives, or operating cadence haven't caught up.</p>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>How I engage</h2>
+
+        <div class="mode">
+            <div class="mode-name">Advisory partner</div>
+            <p>I work alongside executives to pressure-test decisions, identify structural gaps, and translate strategy into operating rules. This is the most common mode when the organization has strong internal capability but needs external perspective on high-stakes commercial decisions.</p>
+        </div>
+
+        <div class="mode">
+            <div class="mode-name">Embedded operator</div>
+            <p>Temporary but hands-on involvement—owning specific outcomes, driving cross-functional work, and building durable capability rather than producing decks. This typically happens when a company needs to move quickly on a pricing redesign, commercial transition, or growth system build, but doesn't have the internal bandwidth or structure in place yet.</p>
+        </div>
+
+        <div class="mode">
+            <div class="mode-name">Fractional leadership</div>
+            <p>Ongoing responsibility for pricing, commercial excellence, or growth—when a full-time hire is premature or risky. The focus is on standing up systems, processes, and decision-making frameworks that outlast the engagement, not just advising on what to do.</p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>Where I tend to be most useful</h2>
+
+        <div class="situation-list">
+            <p class="situation-item">Organizations scaling pricing beyond a pilot or single business unit, where the challenge is less about the model itself and more about operating rhythm, decision rights, and cross-functional alignment.</p>
+
+            <p class="situation-item">Companies with strong analytics capability but unclear accountability for commercial outcomes—where insights exist but don't translate into consistent action.</p>
+
+            <p class="situation-item">Leadership teams managing decentralized commercial models, particularly when local autonomy is causing drift and the question is how much to centralize versus how to govern effectively.</p>
+
+            <p class="situation-item">Moments of transition: new CRO, new pricing model, post-acquisition integration, shift from transactional to enterprise motion—situations where the existing playbook no longer applies and the organization needs to build new muscle.</p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>Representative situations</h2>
+
+        <div class="vignette">
+            <p>A multi-division enterprise with inconsistent pricing behavior despite centralized analytics. The issue wasn't the model—it was unclear escalation paths and incentive misalignment across regional leaders. The work focused on redefining decision rights and embedding pricing into the weekly operating cadence.</p>
+        </div>
+
+        <div class="vignette">
+            <p>A Series C SaaS company preparing to move upmarket. The existing pricing structure optimized for volume, not deal size, and the sales team had no muscle for multi-year enterprise deals. We redesigned the packaging architecture, rebuilt the comp plan, and created the commercial infrastructure to support a different sales motion.</p>
+        </div>
+
+        <div class="vignette">
+            <p>A growth-stage company where product and sales operated with fundamentally different assumptions about what drove value. Product built features no one paid for; sales discounted to close deals. The work wasn't about pricing tactics—it was about creating shared understanding of value, aligning roadmap priorities with commercial outcomes, and building feedback loops that actually worked.</p>
+        </div>
+
+        <div class="vignette">
+            <p>An organization that had grown through acquisition, with five different pricing models across business units. Finance couldn't model the business accurately, sales couldn't cross-sell, and customers were confused. The work involved rationalizing the architecture without disrupting existing revenue, building migration paths, and creating governance that prevented future fragmentation.</p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>What I don't do</h2>
+
+        <p>I don't run generic pricing assessments or benchmarking exercises. I don't sell tooling, software, or ongoing retainers disconnected from specific outcomes. I don't optimize pricing in isolation from incentives, governance, and organizational structure. And I don't take on work where the real blockers are political rather than structural—if no one has the mandate to drive change, the engagement won't succeed.</p>
+    </section>
+</BaseLayout>
+
+<style>
+    .intro {
+        font-size: 19px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-bottom: 72px;
+        max-width: 620px;
+    }
+
+    .mode {
+        margin-bottom: 32px;
+    }
+
+    .mode:last-child {
+        margin-bottom: 0;
+    }
+
+    .mode-name {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .situation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .situation-item {
+        line-height: 1.7;
+    }
+
+    .vignette {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .vignette:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    @media (max-width: 768px) {
+        .intro {
+            margin-bottom: 56px;
+        }
+
+        .mode {
+            margin-bottom: 28px;
+        }
+
+        .vignette {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+        }
+    }
+</style>

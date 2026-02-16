@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About">
+    <h1>About</h1>
+
+    <p class="intro">I've spent the majority of my career working at the intersection of pricing, growth, and value creation—often in environments where the analytical answer was clear, but the organizational path forward was not.</p>
+
+    <p class="intro">My work has spanned advisory roles, embedded operating leadership, and hands-on execution across complex, multi-division organizations. The common thread has been helping leadership teams translate strategic intent into durable commercial capability.</p>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>Background</h2>
+
+        <p>Earlier in my career, I worked in pricing and commercial strategy advisory roles, partnering with leadership teams across industries to address growth, margin, and operating model challenges. That experience sharpened my view that pricing is rarely a math problem in isolation—it is a governance, incentive, and behavioral problem as much as an analytical one.</p>
+
+        <p>In subsequent roles, I've focused on building and scaling pricing and revenue capabilities within operating environments, working directly with executives and frontline teams to embed decision discipline into day-to-day cadence. The emphasis has consistently been on creating systems that outlast any individual initiative.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>How I think about the work</h2>
+
+        <p>I tend to view pricing and commercial excellence as infrastructure, not tactics. The objective is not simply to set the right number, but to ensure that the organization can make coherent decisions under pressure—across divisions, regions, and changing market conditions.</p>
+
+        <p>That means aligning decision rights, clarifying guardrails, and designing incentives that reinforce desired behavior. It also means resisting the temptation to over-engineer solutions that cannot be sustained operationally.</p>
+
+        <p>In practice, most meaningful improvement comes from narrowing ambiguity rather than adding complexity.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>Outside of work</h2>
+
+        <p>I'm based in Miami. Outside of professional work, I'm interested in long-horizon thinking, systems design, and how organizations sustain performance over time. Much of the writing on this site reflects questions that have emerged from real operating environments rather than abstract theory.</p>
+    </section>
+</BaseLayout>
+
+<style>
+    .intro {
+        font-size: 19px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-bottom: 24px;
+        max-width: 620px;
+    }
+
+    .intro:last-of-type {
+        margin-bottom: 72px;
+    }
+
+    @media (max-width: 768px) {
+        .intro:last-of-type {
+            margin-bottom: 56px;
+        }
+    }
+</style>

@@ -1,17 +1,27 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+    <h1>I work on pricing-led growth, commercial execution, and value creation in complex organizations.</h1>
+
+    <section>
+        <p>Most companies treat pricing as a tactical lever—something you set once and revisit when you're desperate. But pricing is structural. It shapes how products get built, how sales teams operate, how customers adopt and expand, and how value compounds over time.</p>
+
+        <p>I've spent the last decade inside fast-growth companies and large enterprises, working on the problems that live between strategy and execution: how you design pricing that drives behavior, how you build commercial systems that scale without breaking, how you create leverage in organizations that resist change.</p>
+
+        <p>This isn't about frameworks or best practices. It's about the specific, unglamorous work of aligning incentives, building clarity in ambiguity, and executing when the stakes are real.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>What I focus on</h2>
+
+        <p><strong>Pricing architecture.</strong> How you structure pricing to create natural expansion, reduce friction, and align with how customers actually adopt and derive value. Not what to charge—how to charge in a way that compounds.</p>
+
+        <p><strong>Commercial execution.</strong> The systems, processes, and incentives that turn pricing strategy into revenue. How sales and CS actually operate in the field. Where deals break down. What needs to change.</p>
+
+        <p><strong>Value creation in complexity.</strong> How you drive outcomes when the organization is distributed, incentives are misaligned, and the problems are cross-functional. Building leverage without authority.</p>
+    </section>
+</BaseLayout>
