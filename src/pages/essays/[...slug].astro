@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const essays = await getCollection('essays');
+  return essays.map((essay) => ({
+    params: { slug: essay.slug },
+    props: { essay },
+  }));
+}
+
+const { essay } = Astro.props;
+const { Content } = await essay.render();
+---
+
+<BaseLayout title={essay.data.title}>
+    <article class="essay">
+        <h1>{essay.data.title}</h1>
+        <div class="essay-meta">{essay.data.date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
+        
+        <div class="essay-content">
+            <Content />
+        </div>
+    </article>
+</BaseLayout>
+
+<style is:global>
+    .essay-meta {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        color: var(--text-tertiary);
+        margin-bottom: 64px;
+    }
+
+    .essay-content {
+        max-width: 620px;
+    }
+
+    .essay-content h2 {
+        font-family: 'Crimson Pro', serif;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: var(--text-primary);
+        margin-top: 56px;
+        margin-bottom: 24px;
+        letter-spacing: -0.01em;
+        text-transform: none;
+    }
+
+    .essay-content p {
+        margin-bottom: 24px;
+        line-height: 1.7;
+    }
+
+    .essay-content p:first-of-type {
+        font-size: 21px;
+        line-height: 1.6;
+        color: var(--text-secondary);
+    }
+
+    .essay-content em {
+        font-style: italic;
+    }
+
+    .essay-content strong {
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+        .essay-meta {
+            margin-bottom: 48px;
+        }
+
+        .essay-content h2 {
+            font-size: 19px;
+            margin-top: 48px;
+        }
+
+        .essay-content p:first-of-type {
+            font-size: 19px;
+        }
+    }
+</style>
