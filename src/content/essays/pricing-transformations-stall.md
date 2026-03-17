@@ -1,6 +1,6 @@
 ---
 title: "Why pricing transformations stall after the pilot"
-description: "Most pricing models succeed in controlled environments but struggle at scale. The problem isn't the analytics—it's the decision architecture that determines how pricing actually happens in practice."
+description: "Pricing models often succeed in controlled environments but struggle at scale. The problem isn't the analytics—it's who has authority to decide when the model's recommendation conflicts with local judgment."
 date: 2026-01-15
 ---
 
